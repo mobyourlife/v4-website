@@ -1,12 +1,12 @@
-angular.module('MobYourLife.Manual', [
+angular.module('MobYourLife.Website', [
 	'ngRoute'
 ])
 
 .config(function ($routeProvider) {
 	$routeProvider
-		.when('/apresentacao/:passo?', {
-			templateUrl: 'partials/apresentacao.html',
-			controller: 'ApresentacaoCtrl'
+		.when('/inicio', {
+			templateUrl: 'partials/inicio.html',
+			controller: 'InicioCtrl'
 		})
 		.when('/vantagens', {
 			templateUrl: 'partials/vantagens.html',
@@ -16,16 +16,12 @@ angular.module('MobYourLife.Manual', [
 			templateUrl: 'partials/precos.html',
 			controller: 'PrecosCtrl'
 		})
-		.when('/manual/:subPagina?', {
-			templateUrl: 'partials/manual/index.html',
-			controller: 'ManualCtrl'
-		})
 		.when('/fale-conosco', {
 			templateUrl: 'partials/fale-conosco.html',
 			controller: 'FaleConoscoCtrl'
 		})
 		.otherwise({
-			redirectTo: '/apresentacao'
+			redirectTo: '/inicio'
 		});
 })
 
@@ -33,6 +29,10 @@ angular.module('MobYourLife.Manual', [
 	$rootScope.$on('$routeChangeSuccess', function (ev, data) {
 		$rootScope.controller = data.controller;
 	});
+})
+
+.controller('InicioCtrl', function ($scope, $routeParams) {
+	//
 })
 
 .controller('ApresentacaoCtrl', function ($scope, $routeParams, $location) {
@@ -64,9 +64,4 @@ angular.module('MobYourLife.Manual', [
 
 .controller('PrecosCtrl', function () {
 	//
-})
-
-.controller('ManualCtrl', function ($scope, $routeParams) {
-	var subPagina = $routeParams.subPagina || 'home';
-	$scope.uri = 'partials/manual/subpaginas/' + subPagina + '.html';
 });
