@@ -1,0 +1,16 @@
+body
+{
+    padding-top: 30px;
+    overflow-y: scroll;
+}
+
+.navbar-brand > img
+{
+    margin-top: -5px;
+}
+
+#main
+{
+    padding: 40px 15px;
+    text-align: center;
+}
