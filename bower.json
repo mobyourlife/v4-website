@@ -1,0 +1,31 @@
+{
+  "name": "mobyourlife-website",
+  "version": "4.0.0",
+  "authors": [
+    "Filipe Oliveira <contato@fmoliveira.com.br>"
+  ],
+  "description": "Landing website for Mob Your Life.",
+  "main": "gulpfile.js",
+  "moduleType": [
+    "es6",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "mob",
+    "your",
+    "life",
+    "website",
+    "landing",
+    "page"
+  ],
+  "license": "Apache-2.0",
+  "homepage": "http://www.mobyourlife.com.br",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

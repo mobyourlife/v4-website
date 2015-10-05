@@ -1,0 +1,24 @@
+{
+  "name": "mobyourlife-website",
+  "version": "4.0.0",
+  "description": "Landing website for Mob Your Life.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/mobyourlife/website.git"
+  },
+  "keywords": [
+    "mob",
+    "your",
+    "life",
+    "website",
+    "landing",
+    "page"
+  ],
+  "author": "Filipe Oliveira <contato@fmoliveira.com.br>",
+  "license": "Apache-2.0",
+  "homepage": "https://bitbucket.org/mobyourlife/website#readme"
+}
